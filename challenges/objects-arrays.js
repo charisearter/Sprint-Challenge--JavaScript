@@ -163,6 +163,19 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 const populationTotal = 0;
+//new array for population function
+
+//make population that gives state and population of animals function
+function population(data, zooPop) {
+  
+  for (let i = 0; i < data.length; i++){
+    if (data[i].population > 0){
+      pop.push (data[i].population)
+    }
+  }
+    }
+//reduce method for animals total
+
 console.log(populationTotal);
 
 
