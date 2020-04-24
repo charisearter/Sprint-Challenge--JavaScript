@@ -28,15 +28,34 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
-1. Describe the biggest difference between `.forEach` & `.map`.
+Q1. Briefly compare and contrast .forEach & .map (2-3 sentences max)
 
-2. What is the difference between a function and a method?
+A1. .forEach iterates over the entire array without stopping like a for loop. It calls a function for each element of the array. It is not good to use for huge data sets because of memory issues.
 
-3. What is closure?
+.map creates a new array with the result of calling a function for each array element. It does not change the original array. .map takes 2 arguments (callback and the context)
 
-4. Describe the four rules of the 'this' keyword.
+Q2. Explain the difference between a callback and a higher-order function.
 
-5. Why do we need super() in an extended class?
+A2. Callbacks are functions that are passed into other functions as arguments. Higher-order functions are functions that receive other functions as parameters.
+
+Q3. What is closure?
+
+A3. Closure is a collection of all the variables in scope at the time of the creation of the function.
+
+Q4. Describe the four rules of the 'this' keyword.
+
+A4. Implicit binding - whatever is to the left when function is invoked is what “this” references. Explicit binding - (call, apply, bind) tell exactly what “this” is refering to.
+
+.call - immediately invokes function and passes arguments 1 by 1.
+
+.apply - immediately invokes function and passes arguments as an array
+
+.bind - does not immediately invoke function but creates new function to be called later
+ 
+Q5. Why do we need super() in an extended class?
+
+A5. super() calls the Parent of the extended class. If it isn’t there it won’t know whose child it is.
+
 
 ## Project Set up
 
