@@ -126,6 +126,10 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
+zooAnimals.forEach(function(data){
+return displayNames.push(`Name: ${data.animal_name}, Scientific: ${data.scientific_name}`)
+});
+
 console.log(displayNames);
 
 /* Request 2: .map()
