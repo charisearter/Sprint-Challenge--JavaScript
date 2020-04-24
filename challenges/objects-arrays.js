@@ -139,8 +139,9 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 */
 
 const lowCaseAnimalNames = [];
-zooAnimals.map(function(data){
-  lowCaseAnimalNames.toLowerCase.push(data.animal_name);
+let makeSmall = zooAnimals.map(function(data){
+
+    lowCaseAnimalNames.push(data.animal_name.toLowerCase())
 })
 console.log(lowCaseAnimalNames);
 
@@ -150,6 +151,10 @@ The zoos are concerned about animals with a lower population count. Using filter
 
 */
 const lowPopulationAnimals = [];
+let lowPop = zooAnimals.filter(function(data){
+  if (data.population < 5)
+  lowPopulationAnimals.push(data.animal_name)
+})
 console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
